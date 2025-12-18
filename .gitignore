@@ -1,0 +1,60 @@
+# =============== #
+# Unity generated #
+# =============== #
+Release/
+Temp/
+Logs/
+Obj/
+UnityGenerated/
+.vscode/
+Library/
+Assets/AssetStoreTools/*
+Assets/GeneratedLocalRepo*
+
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+
+.vs/
+.idea/
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.log
+
+# ============ #
+# OS generated #
+# ============ #
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+*.apk
+Logs/Packages-Update.log
+!*.obj
+!*.dll
+!*.meta
+*.utmp/
