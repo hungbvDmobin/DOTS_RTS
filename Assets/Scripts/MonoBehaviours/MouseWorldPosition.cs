@@ -22,5 +22,20 @@ public class MouseWorldPosition : MonoBehaviour {
         }
     }
 
+    private int index = 10;
+    public int GetIndex => index;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.LogError("Escape");
+            index--;
+            if(index < 0)
+            {
+                index = 10;
+            }    
+        }
+    }
 
 }

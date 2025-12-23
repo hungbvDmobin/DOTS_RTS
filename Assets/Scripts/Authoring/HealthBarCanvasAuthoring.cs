@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.Entities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,4 +29,5 @@ public struct HealthBarCanvasUI : ICleanupComponentData
 {
     public UnityObjectRef<Transform> CanvasTransform;
     public UnityObjectRef<Slider> HealthBarSlider;
+    public UnityObjectRef<TextMeshProUGUI> TextMesh;
 }

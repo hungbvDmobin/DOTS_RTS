@@ -1,6 +1,8 @@
+using TMPro;
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +18,8 @@ partial struct HealthBarCanvasSystem : ISystem
             ecb.AddComponent(entity, new HealthBarCanvasUI
             {
                 CanvasTransform = healtBarObject.transform,
-                HealthBarSlider = healtBarObject.GetComponentInChildren<Slider>()
+                HealthBarSlider = healtBarObject.GetComponentInChildren<Slider>(),
+                TextMesh = healtBarObject.GetComponentInChildren<TextMeshProUGUI>()
             });
         }
 
@@ -24,6 +27,7 @@ partial struct HealthBarCanvasSystem : ISystem
         {
             healthBarCanvas.CanvasTransform.Value.position = playerPostion.Position;
             healthBarCanvas.HealthBarSlider.Value.value = 0.5f;
+            healthBarCanvas.TextMesh.Value.text = MouseWorldPosition.Instance.GetIndex.ToString();
         }
 
         ecb.Playback(state.EntityManager);
