@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 1322750991}
   - component: {fileID: 1322750992}
   - component: {fileID: 1322750993}
+  - component: {fileID: 1322750994}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -491,6 +492,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarCanvasAuthoring
   healthBarCanvasPrefab: {fileID: 6848332979229617546, guid: 1b8519ce5d7dc6e48bb4d207983180ca, type: 3}
+--- !u!114 &1322750994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322750988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf53a63e82071fa4a9fa0c7913353f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextMeshAuthoring
+  textMeshPrefab: {fileID: 9048301865605418301, guid: 26b45a8b5cdd10a4c9de1ab99f85cd77, type: 3}
 --- !u!1 &1746866536
 GameObject:
   m_ObjectHideFlags: 0
